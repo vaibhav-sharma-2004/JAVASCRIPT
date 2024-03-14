@@ -3,6 +3,13 @@ function myName(){
     console.log("vaibhav sharma");
 }
 
+//FUNCTIONS CAN ALSO BE DECLARED WITH THIS SYNTAX
+
+const name= function myname(){
+    console.log("vaibhav sharma");
+}
+
+
 
 
 function addNumber(num1,num2){ //THESE ARE THE PARAMETERS PASSED TO A FUNCTION
@@ -51,3 +58,22 @@ function marks(arr){
 
 //PASSING ARRAY AS A PARAMETER
 let res=marks([10,20,30,40,50])
+
+
+
+
+
+//****************************IMPORTANT****************************/
+
+console.log(addone(5))
+
+function addone(num){  //FOR THIS SYNTAX WE CAN CALL THE FUNCTION BEFORE DECLARATION
+    return num + 1
+}
+
+
+
+//addTwo(5)
+const addTwo = function(num){  //THIS SYNTAX WILL THROW ERROR IF WE CALL FUNCTION BEFORE DECLARATION 
+    return num + 2
+}
